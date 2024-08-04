@@ -52,7 +52,8 @@ class Inscription {
                             // creation d'utilisateur
                             await userSchemaMongo_1.User.create({
                                 nom: IUser.nom,
-                                motDePasse: hash
+                                motDePasse: hash,
+                                score: 0
                             });
                         });
                     });
@@ -65,7 +66,8 @@ class Inscription {
                         message: "user created successfully",
                         user: {
                             "nom": IUser.nom,
-                            "motDePasse": IUser.motDePasse
+                            "motDePasse": IUser.motDePasse,
+                            "score ": 0
                         }
                     });
                 }

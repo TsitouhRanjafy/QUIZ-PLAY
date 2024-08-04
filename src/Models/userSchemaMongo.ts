@@ -4,7 +4,7 @@ import { Document , Schema , model } from "mongoose";
 export interface IUser extends Document {
     nom : string,
     motDePasse : string,
-    scrore : number 
+    score : number 
 }   
 
 
@@ -18,9 +18,9 @@ const UserSchema = new Schema<IUser>({
         type : String,
         required : true
     },
-    scrore : {
+    score : {
         type : Number,
-        required : false
+        required : true
     }
 })
 

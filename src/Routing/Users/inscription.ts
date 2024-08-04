@@ -57,7 +57,8 @@ export default class Inscription{
                             // creation d'utilisateur
                             await User.create({
                                 nom : IUser.nom,
-                                motDePasse : hash
+                                motDePasse : hash,
+                                score : 0
                             })
                     
                         });
@@ -73,11 +74,10 @@ export default class Inscription{
                         message : "user created successfully",
                         user : {
                             "nom" : IUser.nom,
-                            "motDePasse" : IUser.motDePasse
+                            "motDePasse" : IUser.motDePasse,
+                            "score " : 0
                         }
                     })
-
-                    
 
                 } catch (error) {
                     console.log(error);

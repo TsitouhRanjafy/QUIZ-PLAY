@@ -12,7 +12,7 @@ class Profile {
         this.initialisation();
     }
     initialisation() {
-        // GET '/home/signup/'
+        // GET '/home/profile'
         this.router.get('/home/profile', (req, res) => {
             const data = {
                 nom: req.session.nom,

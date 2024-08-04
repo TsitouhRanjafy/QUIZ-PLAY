@@ -9,6 +9,7 @@ const inscription_1 = __importDefault(require("./Users/inscription"));
 const connexion_1 = __importDefault(require("./Users/connexion"));
 const profile_1 = __importDefault(require("./Users/profile"));
 const jeux_1 = __importDefault(require("./Jeux/jeux"));
+const classement_1 = __importDefault(require("./Users/classement"));
 class Route {
     rout;
     constructor(app) {
@@ -34,6 +35,9 @@ class Route {
         // Gestion de route Jeux
         const jeuxroute = new jeux_1.default;
         this.rout.use(jeuxroute.getRouter());
+        // Gestion de route Classement 
+        const classementroute = new classement_1.default;
+        this.rout.use(classementroute.getRouter());
     }
 }
 exports.default = Route;

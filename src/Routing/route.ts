@@ -8,6 +8,7 @@ import Inscription from "./Users/inscription";
 import Connexion from "./Users/connexion";
 import Profile from "./Users/profile";
 import JeuxRoutes from "./Jeux/jeux";
+import ClassementRoute from "./Users/classement";
 
 
 export default class Route {
@@ -42,6 +43,10 @@ export default class Route {
         // Gestion de route Jeux
         const jeuxroute : JeuxRoutes = new JeuxRoutes
         this.rout.use(jeuxroute.getRouter());
+
+        // Gestion de route Classement 
+        const classementroute : ClassementRoute = new ClassementRoute
+        this.rout.use(classementroute.getRouter());
     }
 
 }

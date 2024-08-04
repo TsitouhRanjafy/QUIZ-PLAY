@@ -12,9 +12,9 @@ const UserSchema = new mongoose_1.Schema({
         type: String,
         required: true
     },
-    scrore: {
+    score: {
         type: Number,
-        required: false
+        required: true
     }
 });
 exports.User = (0, mongoose_1.model)('user', UserSchema);

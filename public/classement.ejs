@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/classement.css">
+    <title>Classement</title>
+    <script src="../script/classementBack.js" defer></script>
+</head>
+<body>
+    <div class="containerClassement">
+        <div class="navClassement">
+            <a href="/home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="btnRetoure">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>                 
+            </a>
+            <div class="titreClassement">
+                <h2 style="font-weight: 600 ;font-size: 60px; color: #707070;">CLASSEMENT</h2>
+            </div>
+        </div>
+        <div class="sectionClassement">
+            <table>
+                <thead>
+                    <th>Rang</th>
+                    <th>Nom</th>
+                    <th>Dérnier Quiz</th>
+                    <th>Score</th>
+                    <th>Lien</th>
+                </thead>
+                <tbody id="listeUtilisateur">
+
+                    <% if (Users) %>
+                    <% for (let i =0;i < Count;i++){ %>
+
+                        <tr>
+                            <td> <%= i+1 %> </td>
+                            <td>
+                                <div class="nomList">
+                                    <img src="" style="height: 30px; width: 30px; border-radius: 50%; background-color: #707070;">
+                                    <!-- nom -->
+                                    <label> <%= Users[i].nom %> </label>
+                                </div>
+                            </td>
+                            <!-- dernier quiz qu'il fait -->
+                            <td></td>
+                            <!-- score -->
+                            <td> <%= Users[i].score %> </td>
+                            <td>
+                                <a href="/home/classement/<%= Users[i].nom %>/profile">
+                                    <h3> profile </h3>
+                                </a>
+                                <!-- <img src="" style="width: 15px; height: 15px; background-color: #707070;"> -->
+                            </td>
+                        </tr>
+
+                    <%}%>
+                        
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>
+                            <div class="nomList">
+                                <img src="" style="height: 30px; width: 30px; border-radius: 50%; background-color: #707070;">
+                                <label>MARIO RALISON</label>
+                            </div>
+                        </td>
+                        <td>UI/UX</td>
+                        <td>euphraim96@gmail.com</td>
+                        <td>
+                            <img src="" style="width: 15px; height: 15px; background-color: #707070;">
+                        </td>
+                    </tr> -->
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
