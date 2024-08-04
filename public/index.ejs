@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./script/acceuilBack.js" defer></script>
+    <script src="./script/index.js" defer></script>
+</head>
+
+<body>
+    
+    <!-- est ce que le nom d'utilisateur n'est pas vide -->
+    <% if (nom){ %>
+        <!-- si oui, definir cette span -->
+        <span id="spanExist"></span>
+    <% } %>
+
+    <div class="container" id="container-main">
+
+        <nav>
+            <div class="logo">Logo</div>
+            <div class="listeNavigation">
+                <ul>
+                    <li class="liste"><a href="#">Acceuil</a></li>
+                    <li class="liste"><a href="/home/listeJeux">Jeux</a></li>
+                    <li class="liste"><a href="equipe.html">Equipes</a></li>
+                    <li class="liste"><a href="missions.html">Mission</a></li>
+                    <li class="liste"><a href="./page/classement.html">Classement</a></li>
+                </ul>
+            </div>
+
+            <div class="btnAccueil">
+                <!-- Button Créeation Compte -->
+                <div class="sign" id="sign">
+                    <a href="/home/signin">
+                        <button>Se connecter</button>
+                    </a>
+                    <a href="/home/signup">
+                        <button id="signUp">S'inscrire</button>
+                    </a>
+                </div>
+                <!-- Button Compte -->
+                <div class="compte " id="compte" >
+                    <a href="./home/profile">
+                        <img src="avatar2.png" class="avatar">
+                    </a>
+                    <a href="#" id="button-deconnect">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="deconnexion" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
+                        </svg>                      
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mainContainer">
+            <div class="titreMain">
+                <div class="phase">
+                    <div class="titre">JOUEZ COMME JAMAIS AVEC <strong style="font-weight: 500; font-style: italic; color: #13a0c0;"> QUIZ PLAY </strong></div>
+                    <div class="sousTitre">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur tempore omnis placeat a ratione officiis, deleniti sint provident, alias quod. Magni voluptatem vel voluptate a dolorum, soluta laborum illo.</p>
+                    </div>
+                </div>
+                <div class="btnMain">
+                    <a href="/home/listeJeux">
+                        <button>Jouez</button>
+                    </a>
+                </div>
+            </div>
+            <div class="illustration">
+                <img src="parachute-11.svg" width="100%">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- POPUP pour le deconnexion  -->
+    <div class="container-popup hidden" id="container-avertissement">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="attentionIco">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+        </svg>
+        <h2>Voulez vous vraiment deconnecter?</h2>
+        <div>
+            <button id="annuler">Annuler</button>
+            <a href="/home/deconnexion">
+                <button id="confirmer" >Oui</button>
+            </a>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

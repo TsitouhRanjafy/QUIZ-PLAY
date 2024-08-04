@@ -1,0 +1,210 @@
+/* Variable */
+:root{
+    --background-main : #e0e0e0;
+    --background-nav : #e4e4e4;
+    --box-shadow : 20px 20px 58px #b2b2b2,
+                    -20px -20px 58px #f0f0f0;
+    --text-color : #3d3d3d;
+    --primary-color : #b9b9b9;
+    --secondary-color : #ffd200;
+    --background-carte : #f0f0f0;
+    --btn-sign-up : #363636;
+    --white : #ffffff;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-main);
+    font-family: "outfit", sans-serif;
+    color: var(--text-color);
+}
+
+/* Connexion */
+.containerConnexion{
+    display: flex;
+    width: 80%;
+    height: 70%;
+    background-color: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
+    padding: 50px 0;
+}
+
+.imageSignIn{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    height: 100%;
+    width: 55%;
+}
+
+.btnBackSignIn, .image{
+    width: 100%;
+}
+
+.btnBackSignIn{
+    height: 10%;
+    margin-left: 80px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin-left: 20px;
+}
+
+.imageSignIn button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 59px;
+    background: #ffffff;
+    box-shadow:  16px 16px 32px #ebebeb,
+                -16px -16px 32px #ffffff;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.imageSignIn button:hover{
+    transform: translateY(-5px);
+    transition: all 0.5s ease-in-out;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 59px;
+    background: #ffffff;
+    box-shadow:  16px 16px 32px #ebebeb,
+                -16px -16px 32px #ffffff;
+}
+
+.signIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    width: 45%;
+    padding: 20px;
+}
+
+.signIn .listInputConnexion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 30px;
+}
+
+.listInputConnexion input{
+    width: 100%;
+    height: 70px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    border-radius: 10px;
+    background: #f0f0f0;
+    box-shadow: inset 5px 5px 10px #dddddd,
+            inset -5px -5px 10px #ffffff;
+}
+
+.optionSignIn a{
+    color: #8284fc;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.signIn button{
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 59px;
+    background: var(--secondary-color);
+    box-shadow:  23px 23px 46px #ebebeb,
+                -23px -23px 46px #ffffff;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+}
+.signIn button:active{
+    background-color: #b9b9b9;
+    color: #f0f0f0;
+}
+
+/*.signIn button:hover{
+    transform: translateY(-5px);
+    transition: all 0.5s ease-in-out;
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 59px;
+    cursor: pointer;
+    background: var(--secondary-color);
+    box-shadow:  23px 23px 46px #ebebeb,
+                -23px -23px 46px #ffffff;
+} */
+
+
+
+
+
+/* ________________________________ ERROR __________________________ */
+.error{
+    color: red;
+    font-size: 15px;
+    
+}
+*.center-h{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.btnRetoure{
+    background-color:#e0e0e0;
+    width: 50px;
+    height: 50px;
+    padding: 10px 5px ;
+    border-radius: 25px;
+}
+.btnRetoure:active{
+    padding-right: 15px;
+}
+.container-result{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container-result a button{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    border: none;
+    margin-top: 40px;
+}
+.container-result a button:active{
+    color: #f0f0f0;
+    background: #b9b9b9;
+}
+.container-result  svg.checkIco{
+    width: 50px;
+    height: 50px;
+    color: green;
+}
+*.hidden{
+    display: none;
+}

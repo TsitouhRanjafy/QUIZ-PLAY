@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- //fichier style -->
+    <link rel="stylesheet" href="../assets/equipe.css">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Equipet</title>
+</head>
+<body>
+
+    <div class="containerEquipe">
+
+        <div class="navEquipe">
+            <a href="../index.html">
+                <button></button>
+            </a>
+            <h2 style="font-weight: 600 ;font-size: 60px; color: #707070;">NOTRE EQUIPE</h2>
+        </div>
+
+        <div class="sectionEquipe">
+
+            <div class="carteEquipe">
+                <div class="imageEquipe">
+                    <img src="" style="width: 200px;  height: 200px; background-color: #707070; border-radius: 100px;">
+                </div>
+                <div class="Equipe">
+                    <div class="nomEquipe" style="text-align: center;">
+                        <h2 style="font-size: 2.8vw; font-weight: 500; margin-bottom: 10px;">Mario Ralison</h2>
+                        <h4 style="font-weight: 300; font-size: 0.8vw;">FRONT-END DEVELOPPER - WEB DESIGNER</h4>
+                    </div>
+                    <div class="DescriptionEquipe" style="text-align: center; font-weight: 200;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta excepturi, nobis tenetur nulla assumenda nesciunt aliquid beatae
+                    </div>
+                    <div class="footerEquipe" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                        <h3 style="font-weight: 500; padding-bottom: 20px;">SUIVRE</h3>
+                        <div class="lienExterneEquipe">
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carteEquipe">
+                <div class="imageEquipe">
+                    <img src="" style="width: 200px;  height: 200px; background-color: #707070; border-radius: 100px;">
+                </div>
+                <div class="Equipe">
+                    <div class="nomEquipe" style="text-align: center;">
+                        <h2 style="font-size: 2.8vw; font-weight: 500; margin-bottom: 10px;">Mario Ralison</h2>
+                        <h4 style="font-weight: 300; font-size: 0.8vw;">FRONT-END DEVELOPPER - WEB DESIGNER</h4>
+                    </div>
+                    <div class="DescriptionEquipe" style="text-align: center; font-weight: 200;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta excepturi, nobis tenetur nulla assumenda nesciunt aliquid beatae
+                    </div>
+                    <div class="footerEquipe" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                        <h3 style="font-weight: 500; padding-bottom: 20px;">SUIVRE</h3>
+                        <div class="lienExterneEquipe">
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- fichier script du splide -->
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js">
+        new Splide('.splide').mount();
+    </script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide' );
+            splide.mount();
+        } );
+    </script>
+
+</body>
+</html>

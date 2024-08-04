@@ -1,0 +1,172 @@
+/* Variable */
+:root{
+    --background-main : #e0e0e0;
+    --background-nav : #e4e4e4;
+    --box-shadow : 20px 20px 58px #b2b2b2,
+                    -20px -20px 58px #f0f0f0;
+    --text-color : #3d3d3d;
+    --primary-color : #b9b9b9;
+    --secondary-color : #ebc55d;
+    --background-carte : #f0f0f0;
+    --btn-sign-up : #363636;
+    --white : #ffffff;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-main);
+    font-family: "outfit", sans-serif;
+    color: var(--text-color);
+}
+
+.containerProfil{
+    padding-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation profil */
+.navProfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding: 90px 100px;
+}
+
+/*button{
+    cursor: pointer;
+}*/
+
+/*.navProfil button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s ease-in-out;
+} */
+
+/*.navProfil button:hover{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+} */
+
+/* Contenu Profil */
+.sectionProfil{
+    width: 70%;
+    height: 80%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
+}
+
+.imageProfil, .infoProfil{
+    width: 50%;
+    height: 100%;
+}
+
+.imageProfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.imgUser{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.infoProfil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.infoProfil div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.infoProfil input{
+    width: 70%;
+    height: 70px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    border-radius: 10px;
+    background: #f0f0f0;
+    box-shadow: inset 5px 5px 10px #dddddd,
+            inset -5px -5px 10px #ffffff;
+}
+/* ______________________________ BY TSITOHAINA __________________________________ */
+
+*.hidden{
+    display: none;
+    visibility: hidden;
+}
+.btnRetoure{
+    background-color: #f0f0f0;
+    width: 50px;
+    height: 50px;
+    padding: 10px 5px ;
+    border-radius: 25px;
+}
+.pdp{
+    color: #13a0c0;
+}
+.btnRetoure:active{
+    padding-right: 15px;
+}
+.edit{
+    width: 40px;
+    height: 40px; 
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.edit:hover{
+    background-color:#ffd200;
+    transition: 100ms linear;
+}

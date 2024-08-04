@@ -1,0 +1,36 @@
+{
+  "name": "quizplay",
+  "version": "1.0.0",
+  "description": "application web quiz avec express node typescript ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node ./dist/serveur.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/qrcode": "^1.5.5",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-yup-middleware": "^1.2.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "qrcode": "^1.5.3",
+    "typescript": "^5.5.4",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/http-status-codes": "^1.2.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/mongoose": "^5.11.97",
+    "express-session": "^1.18.0",
+    "http-status-codes": "^2.3.0"
+  }
+}

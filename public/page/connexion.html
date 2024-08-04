@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/connexion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Connexion</title>
+    <script src="../script/connexionBack.js" defer></script>
+</head>
+<body>
+    <div class="containerConnexion">
+        <div class="imageSignIn">
+            <div class="btnBackSignIn">
+                <a href="/home">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="btnRetoure">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>                  
+                </a>
+            </div>
+            <div class="image">
+                <img src="../image/designer-1-78.svg" width="500px">
+            </div>
+        </div>
+        <div class="signIn">
+            <div style="width: 100%; text-align: center;">
+                <h1 style="font-size: 60px;">Se connecter</h1>
+                <p style="font-size: 36px; font-weight: 300">à Quiz Play</p>
+            </div>
+            <form class="listInputConnexion" id="form">
+                <input type="text" inputmode="latin-name" name="nom" placeholder="Nom" required id="nom" minlength="4" maxlength="25">
+                <input type="password" name="motDePasse" placeholder="Mot de passe" required id="motDePasse" minlength="8" maxlength="30">
+                <div class="optionSignIn">
+                    <p class="error center-h"  id="error"></p>
+                    <a href="#">
+                        <label style="font-weight: 200; color: #3d3d3d; cursor: pointer;">Mot de passe oublié ?</label>
+                    </a>
+                    <a href="/home/signup">
+                        <label style="cursor: pointer;">S'inscrire</label>
+                    </a>
+                </div>
+                <button type="submit" id="submit" >Se connecter</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
