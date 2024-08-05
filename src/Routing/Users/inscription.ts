@@ -18,6 +18,7 @@ export default class Inscription{
     private initialisation(){
         // GET '/home/signup/'
         this.router.get('/home/signup/',(req : Request,res : Response) =>{
+            if (req.session.nom) return;
             res.sendFile(path.join(__dirname,'../../../public/page/inscription.html'));
         })
 

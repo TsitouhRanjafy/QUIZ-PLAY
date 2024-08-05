@@ -20,6 +20,9 @@ class Connexion {
     initialisation() {
         // GET '/home/signup/'
         this.router.get('/home/signin/', (req, res) => {
+            if (req.session.nom) {
+                return;
+            }
             res.sendFile(path_1.default.join(__dirname, '../../../public/page/connexion.html'));
         });
         // POST '/home/signup/in'

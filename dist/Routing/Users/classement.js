@@ -27,7 +27,6 @@ class ClassementRoute {
             if (!AllUsers) {
                 return;
             }
-            console.log(AllUsers.length);
             // affecter tout l'utilisateur dans notre data pour qu'on puisse l'afficher
             const data = {
                 Users: AllUsers,

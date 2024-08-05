@@ -19,6 +19,11 @@ export default class Connexion{
     private initialisation(){
         // GET '/home/signup/'
         this.router.get('/home/signin/', (req : Request,res : Response) =>{
+
+            if (req.session.nom){
+                return;
+            }
+
             res.sendFile(path.join(__dirname,'../../../public/page/connexion.html'));
         })
 
