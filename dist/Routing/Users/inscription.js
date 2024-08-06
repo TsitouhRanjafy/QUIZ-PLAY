@@ -19,9 +19,8 @@ class Inscription {
     initialisation() {
         // GET '/home/signup/'
         this.router.get('/home/signup/', (req, res) => {
-            if (req.session.nom) {
+            if (req.session.nom)
                 return;
-            }
             res.sendFile(path_1.default.join(__dirname, '../../../public/page/inscription.html'));
         });
         // POST '/home/signup/adduser'
