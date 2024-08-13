@@ -57,6 +57,28 @@ html,body{
     margin-left: 80px;
 }
 
+.btnNavBack{
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s ease-in-out;
+}
+
+.btnNavBack:hover{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+
 .image{
     display: flex;
     justify-content: center;
@@ -130,15 +152,15 @@ html,body{
 }
 
 .signIn button{
-    width: 150px;
-    height: 60px;
-    border: none;
-    border-radius: 59px;
-    background: var(--secondary-color);
-    box-shadow:  23px 23px 46px #ebebeb,
-                -23px -23px 46px #ffffff;
-    transition: all 100ms ease-in-out;
-    cursor: pointer;
+        width: 150px;
+        height: 60px;
+        border: none;
+        border-radius: 59px;
+        background: var(--secondary-color);
+        box-shadow:  23px 23px 46px #ebebeb,
+                    -23px -23px 46px #ffffff;
+        transition: all 100ms ease-in-out;
+        cursor: pointer;
 }
 .signIn button:active{
     background-color: #b9b9b9;
@@ -159,6 +181,7 @@ html,body{
 }
 
 
+/* Inscription reussi */
 
 
 

@@ -26,7 +26,9 @@
     <div class="container" id="container-main">
 
         <nav>
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <img src="../image/logo.png" style="width: 8vw;">
+            </div>
             <div class="listeNavigation">
                 <ul>
                     <li class="liste"><a href="#">Acceuil</a></li>
@@ -49,10 +51,10 @@
                 </div>
                 <!-- Button Compte -->
                 <div class="compte " id="compte" >
-                    <a href="./home/profile">
-                        <img src="avatar2.png" class="avatar">
+                    <a href="./home/profile" class="btnCompte">
+                        <img src="./image/homme.png" class="avatar">
                     </a>
-                    <a href="#" id="button-deconnect">
+                    <a href="#" id="button-deconnect" class="btnCompte">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="deconnexion" >
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
                         </svg>                      
@@ -66,7 +68,7 @@
                 <div class="phase">
                     <div class="titre">JOUEZ COMME JAMAIS AVEC <strong style="font-weight: 500; font-style: italic; color: #13a0c0;"> QUIZ PLAY </strong></div>
                     <div class="sousTitre">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur tempore omnis placeat a ratione officiis, deleniti sint provident, alias quod. Magni voluptatem vel voluptate a dolorum, soluta laborum illo.</p>
+                        <p>Testez vos connaissances avec une série de questions stimulantes conçues pour évaluer vos compétences dans divers domaines. Que vous soyez un expert ou un amateur curieux, notre quiz est fait pour vous ! Cliquez sur le bouton ci-dessous pour commencer et voyez combien vous pouvez obtenir de bonnes réponses. Amusez-vous bien et bonne chance !</p>
                     </div>
                 </div>
                 <div class="btnMain">
@@ -76,7 +78,7 @@
                 </div>
             </div>
             <div class="illustration">
-                <img src="parachute-11.svg" width="100%">
+                <img src="./image/welcome2.png" width="100%">
             </div>
         </div>
 
@@ -84,14 +86,12 @@
 
     <!-- POPUP pour le deconnexion  -->
     <div class="container-popup hidden" id="container-avertissement">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="attentionIco">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-        </svg>
-        <h2>Voulez vous vraiment deconnecter?</h2>
-        <div>
+        <img src="../image/logout.png" style="width: 15vw;">
+        <label style="font-size: 2rem; margin-top: 4vh;">Voulez vous vraiment deconnecter?</label>
+        <div style="margin-top: 5vh;">
             <button id="annuler">Annuler</button>
             <a href="/home/deconnexion">
-                <button id="confirmer" >Oui</button>
+                <button id="confirmer" style="background-color: #e0e0e0 ;">Oui</button>
             </a>
         </div>
     </div>

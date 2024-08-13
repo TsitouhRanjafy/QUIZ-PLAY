@@ -41,18 +41,25 @@ button{
 
 nav{
     width: 100%;
-    height: 80px;
+    height: auto;
     padding: 0 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+nav .logo{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav .listeNavigation{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 100%;
     width: auto;
     background-color: var(--background-carte);
     box-shadow: var(--box-shadow);
@@ -131,6 +138,31 @@ nav .sign button:hover{
     gap: 60px;
 }
 
+.btnCompte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s ease-in-out;
+}
+
+.btnCompte:hover{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+
 /*.compte button{
     height: 50px;
     width: 50px;
@@ -192,15 +224,30 @@ nav .sign button:hover{
     font-weight: 100;
     border: none;
     border-radius: 50px;
-    background: var(--secondary-color);
+    background: #ffdc42;
     box-shadow: var(--box-shadow);
     /* box-shadow: 0px 0px 0px 0px black; */
-    transition: 100ms ease-in;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnMain button:hover{
+    transform: translateY(-0.8vh);
+    transition: all 0.5s ease-in-out;
+    margin-top: 40px;
+    width: 180px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    border-radius: 50px;
+    background: #ffdc42;
+    box-shadow: var(--box-shadow);
+    /* box-shadow: 0px 0px 0px 0px black; */
 }
 
 .btnMain button:active{
     background-color: #b2b2b2;
-    color: #eeeeee;
+    color: #000000;
 }
 
 .illustration{
@@ -727,11 +774,11 @@ nav .sign button:hover{
 .container-popup{
     position: absolute;
     z-index: 100000;
-    width: 25vw;
-    height: 240px;
+    width: 35vw;
+    height: 60vh;
     top: 50%;
     overflow: hidden;
-    background-color:#b2b2b2;
+    background-color:var(--background-carte);
     margin-left: 50%;
     display: flex;
     flex-direction: column;
@@ -740,22 +787,46 @@ nav .sign button:hover{
     text-align: center;
     transform: translate(-50%,-50%);
     border-radius: 10px;
-    padding: 13px;
-    gap: 20px;
+    padding: 2%;
+    background-color: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
 }
 .container-popup div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
+    gap: 4vw;
     align-items: center;
 }
+
 .container-popup div button{
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 59px;
+    background: #ffdc42;
+    box-shadow:  23px 23px 46px #ebebeb,
+                -23px -23px 46px #ffffff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.container-popup div button:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 59px;
+    cursor: pointer;
+    background: #ffdc42;
+    box-shadow:  23px 23px 46px #ebebeb,
+                -23px -23px 46px #ffffff;
+}
+
 *.blur-disable{
-    filter: blur(5px);
+    filter: blur(20px);
     pointer-events: none;
 }
 .attentionIco{

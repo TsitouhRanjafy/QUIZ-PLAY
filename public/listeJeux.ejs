@@ -16,10 +16,10 @@
 <body>
 
 
-     <!-- est ce que le nom d'utilisateur n'est pas vide -->
-     <% if (nom){ %>
+    <!-- est ce que le nom d'utilisateur n'est pas vide -->
+    <% if (nom){ %>
         <!-- si oui, definir cette span -->
-         <!-- parce que l'utilisateur est connecté -->
+        <!-- parce que l'utilisateur est connecté -->
         <span id="spanExist"></span>
     <% } %>
 
@@ -28,79 +28,81 @@
 
         <div class="navListe">
             <a href="/home">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="btnRetoure">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                </svg>                  
+                <button class="btnNavBack">
+                    <img src="../icons/angle-gauche.png" style="width: 25px; margin-right: 8px;">
+                </button>
             </a>
             <div class="titreJeux">
-                <h2 style="font-weight: 600 ;font-size: 60px; color: #13a0c0;">LISTE DES QUIZ</h2>
+                <h2 style="font-weight: 600 ;font-size: 60px; color: #707070;">LISTE DES QUIZ</h2>
             </div>
             <div class="compte">
                 <a href="/home/profile">
-                    <img src="../image/avatar2.png" class="avatar">
+                    <img src="../image/homme.png" class="avatar">
                 </a>
             </div>
         </div>
 
         <div class="listeJeux">
+
             <div class="carteQuiz" id="quizByMario">
-                <img src="../image/uxLogo.png" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
+                <img src="../image/quizImage/UiUx.jpg" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;" >Scrore</h3>
-                    <a href="../page/quiz.html">
-                        <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;" >UI & UX</h3>
+                    <a>
+                        <button id="btnQuiz1">Jouez</button>
                     </a>
                 </div>
             </div>
             <div class="carteQuiz">
-                <div class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;"></div>
+                <img src="../image/quizImage/algo.jpg" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;">Jeux 1</h3>
-                    <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;">Algo & Pro</h3>
+                    <button id="btnQuiz2">Jouez</button>
                 </div>
             </div>
             <div class="carteQuiz">
-                <div class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;"></div>
+                <img src="../image/quizImage/database.jpg" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;">Jeux 1</h3>
-                    <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;">Base de donnée</h3>
+                    <button id="btnQuiz3">Jouez</button>
                 </div>
             </div>
             <div class="carteQuiz">
-                <div class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;"></div>
+                <img src="../image/quizImage/javascript.jpg" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;">Jeux 1</h3>
-                    <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;">Javascript</h3>
+                    <button id="btnQuiz4">Jouez</button>
                 </div>
             </div>
             <div class="carteQuiz">
-                <div class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;"></div>
+                <img src="../image/quizImage/ordinateur.PNG" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;">Jeux 1</h3>
-                    <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;">Ordinateur</h3>
+                    <button id="btnQuiz5">Jouez</button>
                 </div>
             </div>
             <div class="carteQuiz">
-                <div class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;"></div>
+                <img src="../image/quizImage/java.jpg" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;">Jeux 1</h3>
-                    <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;">Java</h3>
+                    <button id="btnQuiz6">Jouez</button>
                 </div>
             </div>
             <div class="carteQuiz">
-                <div class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;"></div>
+                <img src="../image/quizImage/php.jpg" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;">Jeux 1</h3>
-                    <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;">PHP</h3>
+                    <button id="btnQuiz7">Jouez</button>
                 </div>
             </div>
             <div class="carteQuiz">
-                <div class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;"></div>
+                <img src="../image/quizImage/systeme.jpg" class="imageQuiz" style="width: 100%; height: 67%; background-color: rgb(223, 223, 223); margin-top: 8px; border-radius: 12px;">
                 <div class="footerQuiz">
-                    <h3 style="font-size: 28px; font-weight: 300;">Jeux 1</h3>
-                    <button>Jouez</button>
+                    <h3 style="font-size: 28px; font-weight: 300;">Systeme exploitation</h3>
+                    <button id="btnQuiz8">Jouez</button>
                 </div>
             </div>
+            
         </div>
 
         <div class="footerListeJeux">
@@ -111,29 +113,48 @@
                 </div>
                 <div class="listeNavBar footerCarte">
                     <ul>
-                        <li><a href="#">Acceuil</a></li>
-                        <li><a href="#">Jeux</a></li>
-                        <li><a href="#">Equipes</a></li>
-                        <li><a href="#">Mission</a></li>
+                        <li><a href="/home">Acceuil</a></li>
+                        <li><a href="/home/listeJeux">Jeux</a></li>
+                        <li><a href="/home/classement">Classement</a></li>
+                        <li><a href="../page/missions.html">Mission</a></li>
                     </ul>
                 </div>
                 <div class="descriptionEquipe footerCarte">
                     <ul>
-                        <li><a href="#">Notre équipe</a></li>
-                        <li><a href="#">Notre mission</a></li>
-                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="../page/equipe.html">Notre équipe</a></li>
+                        <li><a href="../page/missions.html">Notre mission</a></li>
+                        <li><a href="../page/equipe.html">Contactez-nous</a></li>
                     </ul>
                 </div>
                 <div class="lienExterne">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                    <button>
+                        <a href="#">
+                            <img src="../icons/white/facebook.png">
+                        </a>
+                    </button>
+                    <button>
+                        <a href="#">
+                            <img src="../icons/white/instagram.png">
+                        </a>
+                    </button>
+                    <button>
+                        <a href="#">
+                            <img src="../icons/white/linkedin.png">
+                        </a>
+                    </button>
+                    <button>
+                        <a href="#">
+                            <img src="../icons/white/twitter-alt.png">
+                        </a>
+                    </button>
                 </div>
             </div>
-            <div class="titreFooter"></div>
         </div>
 
     </div>
+
+    <!-- Script -->
+    <script src="../script/quiz.js"></script>
+
 </body>
 </html>

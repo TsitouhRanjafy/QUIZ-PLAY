@@ -10,6 +10,7 @@
     --background-carte : #f0f0f0;
     --btn-sign-up : #363636;
     --white : #ffffff;
+    --bleu : #4d76c4;
 }
 
 *{
@@ -28,6 +29,13 @@ html,body{
     background-color: var(--background-main);
     font-family: "outfit", sans-serif;
     color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--bleu);
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .containerClassement{
@@ -50,7 +58,8 @@ html,body{
     padding: 90px 100px;
 }
 
-.navClassement button{
+.btnNavBack{
+    cursor: pointer;
     height: 60px;
     width: 60px;
     border-radius: 50px;
@@ -60,7 +69,7 @@ html,body{
     transition: 0.5s ease-in-out;
 }
 
-.navClassement button:hover{
+.btnNavBack:hover{
     height: 60px;
     width: 60px;
     border-radius: 50px;

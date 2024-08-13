@@ -43,9 +43,9 @@ export default class Inscription{
                     // ** Ajoute d'une condition si l'utilisateur est déjà exist, envoyons une reponse c'est déjà utiliser ce nom
                     if (isNameReadyExist){
                         res.status(StatusCodes.BAD_REQUEST).json({
-                          status: StatusCodes.BAD_REQUEST,
-                          succes : false,
-                          message: "nom déjà utiliser",
+                            status: StatusCodes.BAD_REQUEST,
+                            succes : false,
+                            message: "nom déjà utiliser",
                         });
                         return; // arrête
                     }

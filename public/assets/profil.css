@@ -72,6 +72,28 @@ html,body{
     transition: 0.5s ease-in-out;
 } */
 
+.btnNavBack{
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s ease-in-out;
+}
+
+.btnNavBack:hover{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--background-carte);
+    box-shadow: var(--box-shadow);
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+
 /* Contenu Profil */
 .sectionProfil{
     width: 70%;
@@ -93,17 +115,20 @@ html,body{
 .imageProfil{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 60px;
 }
 
 .imgUser{
-    width: 100%;
-    height: 40%;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.imgUser img{
+    width: 70%;
 }
 
 a{
@@ -118,6 +143,10 @@ a{
     align-items: flex-start;
     justify-content: center;
     gap: 5vh;
+}
+
+.infoProfil img{
+    cursor: pointer;
 }
 
 .infoProfil div{
@@ -160,10 +189,9 @@ a{
     padding-right: 15px;
 }
 .edit{
-    width: 40px;
-    height: 40px; 
-    padding: 10px;
-    border-radius: 20px;
+    width: 25px;
+    height: 25px; 
+    border-radius: 5px;
     cursor: pointer;
 }
 .edit:hover{
