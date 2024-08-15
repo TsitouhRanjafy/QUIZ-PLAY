@@ -1,24 +1,38 @@
 let quizList = document.querySelectorAll(".question");
-let quizContainer = document.querySelector(".Quiz");
+let quizContainer = document.getElementById("quizContainer");
+console.log(quizContainer);
 
 //Recupération des boutons dans les divers
 let btnQuiz1 = document.getElementById("btnQuiz1");
-
+let btnQuiz2 = document.getElementById("btnQuiz2");
 //Ajout d'évènement
-btnQuiz1.addEventListener = ("click", () => jouer(2));
+btnQuiz1.addEventListener("click",() =>{
+    jouer(1);
+});
+
+btnQuiz2.addEventListener("click",() =>{
+    jouer(2);
+})
 
 //initialisation
 let quizEnCours;
-
+let i;
+let score;
 //Cherche du boutton cliqué par l'user
-function jouer(quizId){
-    switch (quizId) {
+let jouer = (quizId) => {
 
+    //Initialisation des index et des scores de chaque Quiz
+    i = 0;
+    score = 0;
+
+    switch (quizId) {
         case 1 :
             quizEnCours = quizData1;
+            console.log("ok ok ");
             break;
         case 2 :
             quizEnCours = quizData2;
+            console.log("TSY OKOK ");
             break;
 
         default :
@@ -26,10 +40,8 @@ function jouer(quizId){
             return;
     }
 
-    //Initialisation des index et des scores de chaque Quiz
-    let i = 0;
-    let score = 0;
-    ChangementQuiz();
+
+    
 }
 
 //Changement d'etat du contenu du quiz
@@ -49,6 +61,11 @@ function ChangementQuiz(){
         </div>
 `;
 };
+
+if (quizContainer){
+    console.log("tsy nuull");
+    ChangementQuiz();
+}
 
 function soumissionQuiz(){
     const reponsePossible = document.querySelectorAll('input[name="reponse"]');
@@ -86,4 +103,4 @@ function soumissionQuiz(){
 };
 
 window.onload = ChangementQuiz;
-console.log(btnQuiz1);
+

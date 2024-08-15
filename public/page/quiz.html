@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- Style -->
-    <link rel="stylesheet" href="../assets/quiz.css">
-    <!-- Script -->
-    <script src="../script/QuizData.js"></script>
-    <title>Quiz</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        
+        <!-- Style -->
+        <link rel="stylesheet" href="../assets/quiz.css">
+        <!-- Script -->
+        <script src="../script/QuizData.js"></script>
+        <script src="../script/moteurQuiz.js"></script>
+        <title>Quiz</title>
+    </head>
+<body >
     <div class="containerQuiz">
         <div class="navQuiz">
             <a href="/home/listeJeux">
@@ -27,7 +28,7 @@
             </div>
         </div>
         <div class="sectionQuiz">
-            <div class="Quiz">
+            <div class="Quiz" id="quizContainer">
                 <div class="headerQuizGame">
                     <h3 style="font-size: 28px; font-weight: 300;">Question 1</h3>
                     <h1 style="font-size: 42px; max-width: 30vw;">Quelle est le province de Madagascar ?</h1>
@@ -44,8 +45,6 @@
             <div class="iconQuiz"></div>
         </div>
     </div>
-
-    <script src="../script/quiz.js"></script>
 
 </body>
 </html>
